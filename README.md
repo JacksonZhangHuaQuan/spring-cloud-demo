@@ -13,7 +13,7 @@ mvc-demo -- 传统spring项目接入spring cloud服务体系进行服务的注�
 
 - 独立运行Spring项目
 
-Spring boot 可以以jar包形式独立运行，运行一个Spring Boot项目只需要通过java -jar xx.jar来运行。（也可以使用war包进行打包并且使用外部tomcat部署，详见https://blog.csdn.net/qq_33512843/article/details/80951741）
+Spring boot 可以以jar包形式独立运行，运行一个Spring Boot项目只需要通过java -jar xx.jar来运行。（也可以使用war包进行打包并且使用外部tomcat部署，详见https://blog.csdn.net/qq_33512843/article/details/80951741 ）
 
 - 内嵌servlet容器
 
@@ -43,7 +43,7 @@ SpringBoot会根据在类路径中的jar包，类、为jar包里面的类自动�
 # 快速搭建一个简单的Spring Cloud微服务项目
 ### 构建spring boot工程
 
-快速的构建spring boot工程有两种方式，分别是利用Intellij idea的Spring Initializr进行构建和利用Spring官方提供的快速构建工具来构建，工具链接为：https://start.spring.io/，使用Intellij方式构建的方式参考http://www.spring4all.com/article/247，这里讨论使用官方提供的工具来进行安装。
+快速的构建spring boot工程有两种方式，分别是利用Intellij idea的Spring Initializr进行构建和利用Spring官方提供的快速构建工具来构建，工具链接为： https://start.spring.io/ ，使用Intellij方式构建的方式参考 http://www.spring4all.com/article/247 ，这里讨论使用官方提供的工具来进行安装。
 
 进入工具首页后看到如下页面：
 
@@ -117,7 +117,7 @@ eureka.client.register-with-eureka=false
 eureka.client.fetch-registry=false
 ```
 
-之后启动工程，即运行程序入口的main方法，访问http://localhost:1001，可以看到如下页面
+之后启动工程，即运行程序入口的main方法，访问 http://localhost:1001 ，可以看到如下页面
 
 ![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu327f0dj30fi06lgm3.jpg)
 
@@ -198,7 +198,7 @@ eureka.client.serviceUrl.defaultZone=http://localhost:1001/eureka/
 
 ![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu3nih6qj30fi017t8n.jpg)
 
-我们也可以通过直接访问eureka-client服务提供的/dc接口来获取当前的服务清单，只需要访问http://localhost:2001/dc,可以得到输出Services: [eureka-client]，方括号中的内容就是接口返回的服务清单。
+我们也可以通过直接访问eureka-client服务提供的/dc接口来获取当前的服务清单，只需要访问http://localhost:2001/dc ,可以得到输出Services: [eureka-client]，方括号中的内容就是接口返回的服务清单。
 
 至此一个简单的服务提供者就实现好了。
 
@@ -290,11 +290,11 @@ public class DcController {
 }
 ```
 
-之后启动该项目，先访问注册中心，http://localhost:1001发现消费者已经被注册到注册中心中去了，如图
+之后启动该项目，先访问注册中心，http://localhost:1001 发现消费者已经被注册到注册中心中去了，如图
 
 ![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu45atb8j30fi01iaa2.jpg)
 
-访问http://localhost:2101/consumer对服务进行调用，返回Services: [eureka-client, eureka-consumer]
+访问http://localhost:2101/consumer 对服务进行调用，返回Services: [eureka-client, eureka-consumer]
 
 此时，一个服务的注册、发现、消费的整个过程就都已经实现了。
 
