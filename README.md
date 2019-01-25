@@ -1,12 +1,9 @@
 # 项目目录简介
 
-demo -- spring cloud注册中心
-
-eureka-client -- spring cloud服务提供者
-
-eureka-consumer -- spring cloud服务消费者
-
-mvc-demo -- 传统spring项目接入spring cloud服务体系进行服务的注册和消费
+- demo -- spring cloud注册中心
+- eureka-client -- spring cloud服务提供者
+- eureka-consumer -- spring cloud服务消费者
+- mvc-demo -- 传统spring项目接入spring cloud服务体系进行服务的注册和消费
 
 # spring boot的特点
 ### 核心功能
