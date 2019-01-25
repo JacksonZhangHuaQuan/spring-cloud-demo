@@ -47,13 +47,13 @@ SpringBoot会根据在类路径中的jar包，类、为jar包里面的类自动�
 
 进入工具首页后看到如下页面：
 
-![](http://ss1.sinaimg.cn/large/006CsMmSgy1fzitfi2tg3j30fi06o3zb.jpg)
+![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu19or29j30fi06owf5.jpg)
 
 根据需求填写配置后，点击Generate Project下载项目压缩包。
 
 解压后，用IDE以Maven项目导入，导入后项目结构如下图：
 
-![](http://ss1.sinaimg.cn/large/006CsMmSgy1fzitg12oj0j308z07wwfe.jpg)
+![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu2gpo6jj308z07wmxw.jpg)
 
 此时一个基础的spring boot项目就构建完毕了。
 
@@ -119,7 +119,7 @@ eureka.client.fetch-registry=false
 
 之后启动工程，即运行程序入口的main方法，访问http://localhost:1001，可以看到如下页面
 
-![](http://ss1.sinaimg.cn/large/006CsMmSgy1fzitkkzcu7j30fi06lwf3.jpg)
+![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu327f0dj30fi06lgm3.jpg)
 
 ### 创建服务提供者
 
@@ -196,7 +196,7 @@ eureka.client.serviceUrl.defaultZone=http://localhost:1001/eureka/
 
 之后运行该工程，再次访问http://localhost:1001 ,可以看到如下图的内容，说明我们的服务已经被注册到注册中心了。
 
-![](http://ss1.sinaimg.cn/large/006CsMmSgy1fzito3j301j30fi0173yh.jpg)
+![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu3nih6qj30fi017t8n.jpg)
 
 我们也可以通过直接访问eureka-client服务提供的/dc接口来获取当前的服务清单，只需要访问http://localhost:2001/dc,可以得到输出Services: [eureka-client]，方括号中的内容就是接口返回的服务清单。
 
@@ -292,7 +292,7 @@ public class DcController {
 
 之后启动该项目，先访问注册中心，http://localhost:1001发现消费者已经被注册到注册中心中去了，如图
 
-![](http://ss1.sinaimg.cn/large/006CsMmSgy1fzitrjdetkj30fi01i0ss.jpg)
+![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu45atb8j30fi01iaa2.jpg)
 
 访问http://localhost:2101/consumer对服务进行调用，返回Services: [eureka-client, eureka-consumer]
 
@@ -413,7 +413,7 @@ public class MyInstanceConfig extends MyDataCenterInstanceConfig {
 
 此时启动项目就会发现服务已经被注册到注册中心中并被管理起来了（如图）
 
-![](http://ss1.sinaimg.cn/large/006CsMmSgy1fzitv5yk7mj30fi01gdfv.jpg)
+![](http://ww1.sinaimg.cn/large/006CsMmSgy1fziu4q05r2j30fi01gq2x.jpg)
 
 ### 请求服务接口
 
